@@ -24,6 +24,10 @@
 	width: 5rem;
 }
 
+li {
+	list-style: none;
+}
+
 .header a {
 	color: white;
 	text-decoration: none;
