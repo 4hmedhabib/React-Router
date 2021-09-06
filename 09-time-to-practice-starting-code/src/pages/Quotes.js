@@ -7,7 +7,7 @@ const DUMMY_QUOTES = [
 		text: 'Learning react is fan!'
 	},
 	{
-		id: 'q1',
+		id: 'q2',
 		author: 'Ahmed Habib',
 		text: 'Learning vue is great!'
 	}
