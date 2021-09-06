@@ -6,13 +6,13 @@ const Products = () => {
 			<h1>Products Page</h1>
 			<ul>
 				<li>
-					<Link to="/product-detail/p1">A Book</Link>
+					<Link to="/products/p1">A Book</Link>
 				</li>
 				<li>
-					<Link to="/product-detail/p2">A Carplet</Link>
+					<Link to="/products/p2">A Carplet</Link>
 				</li>
 				<li>
-					<Link to="/product-detail/p3">Online Courses</Link>
+					<Link to="/products/p3">Online Courses</Link>
 				</li>
 			</ul>
 		</section>
