@@ -1,7 +1,22 @@
+import QuoteList from '../components/quotes/QuoteList';
+
+const DUMMY_QUOTES = [
+	{
+		id: 'q1',
+		author: 'Hamze Abdi',
+		text: 'Learning react is fan!'
+	},
+	{
+		id: 'q1',
+		author: 'Ahmed Habib',
+		text: 'Learning vue is great!'
+	}
+];
+
 const Quotes = () => {
 	return (
 		<div>
-			<h1>Quotes Page</h1>
+			<QuoteList quotes={DUMMY_QUOTES} />
 		</div>
 	);
 };
