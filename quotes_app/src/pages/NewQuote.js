@@ -5,24 +5,24 @@ import useHttp from '../hooks/use-http';
 import { useEffect } from 'react';
 
 const NewQuote = () => {
-	const { sendingRequest, status } = useHttp(addQuote);
+	const { sendRequest, status } = useHttp(addQuote);
 
 	const history = useHistory();
 
 	useEffect(
 		() => {
-			if (status === 'compelete') {
+			if (status === 'completed') {
 				history.push('/quotes');
 			}
 		},
 		[ status, history ]
 	);
-	const addQuoteHandler = (data) => {
-		sendingRequest(data);
+	const addQuoteHandler = (quoteData) => {
+		sendRequest(quoteData);
 	};
 	return (
 		<div>
-			<QuoteForm onAddQuote={addQuoteHandler} />
+			<QuoteForm isLoading={status === 'pending'} onAddQuote={addQuoteHandler} />
 		</div>
 	);
 };
